@@ -5,14 +5,18 @@ How to use kali tools
 Metasploit
 ----------
 
-*Intialize database 
+Intialize database 
+
 msfdb init
 
-*Check connection to db
+Check connection to db
+
 db_status
 
-*Start msf 
+Start msf 
+
 msfconsole
 
-*Search module 
+Search module 
+
 search <module name>
