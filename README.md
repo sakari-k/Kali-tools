@@ -8,6 +8,7 @@ NMAP
 
 sudo nmap -vv -sV -O --script vuln <ip>
 
+
 Metasploit
 ----------
 
