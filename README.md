@@ -28,23 +28,23 @@ msfconsole
 
 #Search module 
 
-search <module name>
+search MODULE NAME
   
 
 Hashcat
 -------
 #Crack NTLM hash with username (username:hash)
 
-hashcat --username -a 0 -m 1000 <hashes.txt> <wordlist>
+hashcat --username -a 0 -m 1000 HASHES.TXT WORDLIST
 
 
 #Show earlier cracked
 
-hashcat --username --show -a 0 -m 1000 <hashes.txt> <wordlist>
+hashcat --username --show -a 0 -m 1000 HASHES.TXT WORDLIST
   
 
 Gobuster
 --------
 #Basic directory scan
 
-gobuster dir -o gobuster.txt http://IP/ -w <path-to-wordlist>
+gobuster dir -o gobuster.txt http://IP/ -w PATH-TO-WORDLIST
