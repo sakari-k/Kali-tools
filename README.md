@@ -47,4 +47,4 @@ Gobuster
 --------
 #Basic directory scan
 
-gobuster dir -o gobuster.txt http://<ip>/ -w <path-to-wordlist>
+gobuster dir -o gobuster.txt http://IP/ -w <path-to-wordlist>
