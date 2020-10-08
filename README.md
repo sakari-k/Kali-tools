@@ -6,7 +6,7 @@ NMAP
 ----
 #Basic scan
 
-sudo nmap -vv -sV --script vuln IP -o FILE
+sudo nmap -vv -sV --script vuln DEST_IP -o FILE_NAME
 
 
 Metasploit
