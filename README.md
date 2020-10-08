@@ -34,9 +34,9 @@ search MODULE NAME
 
 Hashcat
 -------
-#Crack NTLM hash with username (username:hash)
+#Crack MD5 hash with username (username:hash)
 
-hashcat --username -a 0 -m 1000 HASHES.TXT WORDLIST
+hashcat --username -a 0 -m 0 HASHES.TXT WORDLIST
 
 
 #Show earlier cracked
