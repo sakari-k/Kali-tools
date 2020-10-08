@@ -48,4 +48,4 @@ Gobuster
 --------
 #Basic directory scan
 
-gobuster dir -o gobuster.txt -url http://DEST_IP/ -w PATH-TO-WORDLIST
+gobuster dir -o gobuster.txt -u http://DEST_IP/ -w PATH-TO-WORDLIST
