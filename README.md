@@ -37,7 +37,7 @@ hashcat --username -a 0 -m 0 <hash-file> <path-to-wordlist>
 
 Show earlier cracked
 ```
-hashcat --username --show -a 0 -m 1000 <hash-file> <path-to-wordlist>
+hashcat --username --show -a 0 -m 0 <hash-file> <path-to-wordlist>
 ```  
 
 Gobuster
