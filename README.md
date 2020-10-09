@@ -2,12 +2,12 @@
 How to use kali tools
 
 
-NMAP
-----
-#Basic scan
+## NMAP
 
+### Basic scan
+'''
 sudo nmap -vv -sV --script vuln DEST_IP -o nmap.txt
-
+'''
 
 Metasploit
 ----------
