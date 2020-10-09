@@ -1,9 +1,9 @@
 # Kali-tools
-How to use kali tools
+Notes about how to use kali tools. 
 
 
 ## NMAP
-Basic scan
+Basic scan to file
 ```
 sudo nmap -vv -sV --script vuln <ip> -o nmap.txt
 ```
@@ -32,24 +32,24 @@ search <module>
 ## Hashcat
 Crack MD5 hash with username (username: hash)
 ```
-hashcat --username -a 0 -m 0 HASHES.TXT WORDLIST
+hashcat --username -a 0 -m 0 <hash-file> <path-to-wordlist>
 ```
 
-#Show earlier cracked
+Show earlier cracked
 ```
-hashcat --username --show -a 0 -m 1000 HASHES.TXT WORDLIST
+hashcat --username --show -a 0 -m 1000 <hash-file> <path-to-wordlist>
 ```  
 
 Gobuster
 --------
-#Basic directory scan
+Basic directory scan
 ```
-gobuster dir -o gobuster.txt -u http://DEST_IP/ -w PATH-TO-WORDLIST
+gobuster dir -o gobuster.txt -u <url> -w <path-to-wordlist>
 ```
 
 Priviledge escalation
 --------------------
-#Find suid programs
+Find suid programs
 ```
 find / -user root -perm -4000 -exec ls -ldb {} \; 2>/dev/null
 ```
