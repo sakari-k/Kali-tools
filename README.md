@@ -1,36 +1,32 @@
 # Kali-tools
 How to use kali tools
 
-
 ## NMAP
-
-### Basic scan
+Basic scan
 ```
-sudo nmap -vv -sV --script vuln <DEST_IP>, -o nmap.txt
+sudo nmap -vv -sV --script vuln <DEST_IP> -o nmap.txt
 ```
 
-Metasploit
-----------
-
-#Intialize database 
-
+## Metasploit
+Intialize database 
+```
 msfdb init
-
+```
 
 #Check connection to db
-
+```
 db_status
-
+```
 
 #Start msf 
-
+```
 msfconsole
-
+```
 
 #Search module 
-
+```
 search MODULE NAME
-  
+```  
 
 Hashcat
 -------
