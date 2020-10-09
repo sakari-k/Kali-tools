@@ -6,7 +6,7 @@ How to use kali tools
 
 ### Basic scan
 ```
-sudo nmap -vv -sV --script vuln DEST_IP -o nmap.txt
+sudo nmap -vv -sV --script vuln &gt;DEST_IP&lt; -o nmap.txt
 ```
 
 Metasploit
