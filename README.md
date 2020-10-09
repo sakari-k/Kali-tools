@@ -49,3 +49,10 @@ Gobuster
 #Basic directory scan
 
 gobuster dir -o gobuster.txt -u http://DEST_IP/ -w PATH-TO-WORDLIST
+
+
+Priviledge escalation
+--------------------
+#Find suid programs
+
+find / -user root -perm -4000 -exec ls -ldb {} \;
