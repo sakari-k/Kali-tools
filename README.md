@@ -5,7 +5,7 @@ Notes about how to use kali tools.
 ## NMAP
 Basic scan to file
 ```
-sudo nmap -vv -sV --script vuln <ip> -o nmap.txt
+sudo nmap -sV --script vuln <ip> -o nmap.txt
 ```
 
 ## Metasploit
