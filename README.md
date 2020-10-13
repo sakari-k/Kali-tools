@@ -24,6 +24,11 @@ Start msf
 msfconsole
 ```
 
+Set RHOSTS globally
+```
+setg RHOSTS <ip>
+```
+
 Search module 
 ```
 search <module>
