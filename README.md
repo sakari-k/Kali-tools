@@ -45,6 +45,12 @@ Show earlier cracked
 hashcat --username --show -a 0 -m 0 <hash-file> <path-to-wordlist>
 ```  
 
+## Hydra
+Crack FTP login
+``` 
+hydra -l <username> -P /usr/share/wordlists/rockyou.txt <ip> <ftp/ssh>
+``` 
+
 Gobuster
 --------
 Basic directory scan
