@@ -45,21 +45,30 @@ Show earlier cracked
 hashcat --username --show -a 0 -m 0 <hash-file> <path-to-wordlist>
 ```  
 
+## John the ripper
+Crack hash
+```
+sudo john <hash-file>
+```  
+
+Show earlier cracked
+```
+sudo john --show <hash-file>
+```  
+
 ## Hydra
 Crack FTP login
 ``` 
 hydra -l <username> -P /usr/share/wordlists/rockyou.txt <ip> <ftp/ssh>
 ``` 
 
-Gobuster
---------
+## Gobuster
 Basic directory scan
 ```
 gobuster dir -o gobuster.txt -u <url> -w <path-to-wordlist>
 ```
 
-Priviledge escalation
---------------------
+## Priviledge escalation
 Find suid programs
 ```
 find / -user root -perm -4000 -exec ls -ldb {} \; 2>/dev/null
