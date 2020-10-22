@@ -68,6 +68,12 @@ Basic directory scan
 gobuster dir -o gobuster.txt -u <url> -w <path-to-wordlist>
 ```
 
+## Steghide
+extract data from image
+```
+steghide --extract -sf <file>
+```
+
 ## Priviledge escalation
 Find suid programs
 ```
