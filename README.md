@@ -79,6 +79,10 @@ Find suid programs
 ```
 find / -user root -perm -4000 -exec ls -ldb {} \; 2>/dev/null
 ```
+List programs that could be run as root for current user
+```
+sudo -l
+```
 
 ## Ftp
 Login
