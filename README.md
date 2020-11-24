@@ -57,9 +57,13 @@ sudo john --show <hash-file>
 ```  
 
 ## Hydra
-Crack FTP login
+Crack FTP/SSH login
 ``` 
 hydra -l <username> -P /usr/share/wordlists/rockyou.txt <ip> <ftp/ssh>
+```
+Crack Post Web Form
+``` 
+hydra -l <user> -P /usr/share/wordlists/rockyou.txt <ip> http-post-form "/<login url>:username=^USER^&password=^PASS^&Login=Login:<error message>" -V
 ``` 
 
 ## Gobuster
