@@ -69,7 +69,7 @@ hydra -l <user> -P /usr/share/wordlists/rockyou.txt <ip> http-post-form "/<login
 ## Gobuster
 Basic directory scan
 ```
-gobuster dir -o gobuster.txt -u <url> -w <path-to-wordlist>
+gobuster dir -o gobuster.txt -u <url> -w <path-to-wordlist> -x php,sh,txt,cgi,html,css,js,py
 ```
 
 ## Steghide
