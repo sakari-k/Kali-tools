@@ -8,6 +8,24 @@ Basic scan to file
 sudo nmap -sV --script vuln <ip> -o nmap.txt
 ```
 
+Fast scan
+```
+nmap -F <ip>
+```
+
+
+## Nessus
+Start
+```
+/bin/systemctl start nessusd.service
+```
+
+Web UI
+```
+https://localhost:8834/
+```
+
+
 ## Metasploit
 Intialize database 
 ```
