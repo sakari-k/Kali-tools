@@ -88,6 +88,12 @@ HTTP basic auth (pop up)
 hydra -l <user> -P /usr/share/wordlists/rockyou.txt -s <port> -f <ip> http-get /<page>
 ``` 
 
+## Nikto
+Scan server with credentials
+```
+nikto -h http://10.10.21.122:1234/manager/html -id bob:bubbles
+```
+
 ## Gobuster
 Basic directory scan
 ```
