@@ -117,8 +117,8 @@ sudo -l
 ```
 
 
-## Shell stabilation
-Pyhton3
+## Tips and tricks
+shell stabilization Pyhton3
 ```
 python3 -c 'import pty;pty.spawn("/bin/bash")'
 ```
