@@ -116,6 +116,13 @@ List programs that could be run as root for current user
 sudo -l
 ```
 
+
+## Shell stabilation
+Pyhton3
+```
+python3 -c 'import pty;pty.spawn("/bin/bash")'
+```
+
 ## Ftp
 Login
 ```
