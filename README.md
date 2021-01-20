@@ -118,9 +118,18 @@ sudo -l
 
 
 ## Tips and tricks
-shell stabilization Pyhton3
+shell stabilization
 ```
 python3 -c 'import pty;pty.spawn("/bin/bash")'
+```
+```
+export TERM=xterm
+```
+```
+Ctrl + Z
+```
+```
+stty raw -echo; fg
 ```
 
 
