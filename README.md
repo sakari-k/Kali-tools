@@ -143,3 +143,32 @@ Get file
 ```
 get <file>
 ```
+
+
+
+
+## MYSQL
+Login to local database
+```
+mysql -u<USERNAME> -p
+```
+
+Available databases
+```
+show databases;
+```
+
+Enter database
+```
+use DATABASE;
+```
+
+List tables
+```
+show tables;
+```
+
+Dump table content
+```
+SELECT * FROM <TABLE NAME>;
+```
